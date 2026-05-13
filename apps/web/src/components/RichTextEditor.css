@@ -1,0 +1,18 @@
+
+.ProseMirror {
+  min-height: 300px;
+  outline: none;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #9ca3af;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+/* 
+  Note: Most typography styles are now handled by the .article-content class 
+  in index.css to ensure 1:1 parity between the editor and the displayed article.
+*/
